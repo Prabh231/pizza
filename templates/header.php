@@ -11,9 +11,7 @@
 </head>
 <body>
 <header class="container mt-4">
-    <h1 class="h3 text-muted">
-        Pizza Palace
-    </h1>
+    <h1>Pizza Palace</h1>
     <hr>
 </header>
 <main class="container my-5">
