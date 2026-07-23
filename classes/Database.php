@@ -12,7 +12,7 @@ class Database {
         if ($this->connection !== null) {
             return $this->connection;
         }
-        $dsn = "mysql:host={$this->host};dbname={$this->dbName};charset=utf8mb4";
+        $dsn = "mysql:host={$this->host};db_name={$this->db_name};charset=utf8mb4";
         $options = [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,

@@ -1,4 +1,4 @@
-<?php include "includes/header.php"; ?>
+<?php include "templates/header.php"; ?>
 <main>
 <section class="order-container">
     <h2>Place Your Pizza Order</h2>
@@ -31,4 +31,4 @@
     </form>
     </section>
 </main>
-<?php include "includes/footer.php"; ?>
+<?php include "templates/footer.php"; ?>
