@@ -8,6 +8,9 @@ class Database {
     private string $password = 'zsNffVJ0B-';
 
     private ?PDO $connection = null;
-    
+    public function connect() {
+        if ($this->connection !== null) {
+            return $this->connection;
+        }
 }
 ?>
