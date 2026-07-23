@@ -1,32 +1,52 @@
 <?php include "templates/header.php"; ?>
-<main>
 <section class="order-container">
     <h2>Place Your Pizza Order</h2>
     <form action="process_order.php" method="POST">
-        <label>Full Name: </label>
-        <input type="text" name="customer_name" required>
-        <label>Email: </label>
-        <input type="email" name="email"required>
-        <label>Phone: </label>
-        <input type="tel" name="phone" required>
-        <label>Pizza Size:</label>
-        <select name="pizza_size" required>
-            <option value="">Select Size</option>
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-        </select>
-        <label>Pizza Type:</label>
-        <input type="radio" name="pizza_type" value="Veggie" required>Veggie
-        <input type="radio" name="pizza_type" value="Pepperoni">Pepperoni
-        <label>Toppings:</label>
-        <input type="checkbox" name="toppings[]" value="Cheese">Extra Cheese
-        <input type="checkbox" name="toppings[]" value="Mushroom">Mushroom
-        <input type="checkbox" name="toppings[]" value="Olives">Olives
-        <label>Quantity:</label>
-        <input type="number" name="quantity" min="1"required>
-        <label>Delivery Address:</label>
-        <textarea name="delivery_address" required></textarea>
+        <p>
+            <label for="customer_name">Full Name: </label>
+            <input type="text" name="customer_name" required>
+        </p>
+        <p>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+            <label for="phone">Phone: </label>
+            <input type="tel" name="phone" id="phone" required>
+        </p>
+        <p>
+        <label for="pizza_size">Pizza Size: </label>
+            <select id="pizza_size" name="pizza_size" required>
+                <option value="">Select Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+        </p>
+        <fieldset>
+            <legend>Pizza Type:</legend>
+                <input type="radio" id="veggie" name="pizza_type" value="Veggie" required>Veggie
+                <label for="veggie">Veggie</label>
+                <input type="radio" id="pepperoni" name="pizza_type" value="Pepperoni">Pepperoni
+                <label for="pepperoni">Pepperoni</label>
+        </fieldset>
+        <fieldset>
+            <legend>Toppings:</legend>
+            <input type="checkbox" id="cheese" name="toppings[]" value="Cheese">Extra Cheese
+            <label for="cheese">Extra Cheese</label>
+            <input type="checkbox" id="mushroom" name="toppings[]" value="Mushroom">Mushroom
+            <label for="mushroom">Mushroom</label>
+            <input type="checkbox" id="olives" name="toppings[]" value="Olives">Olives
+            <label for="olives">Olives</label>
+        </fieldset>
+        <p>
+            <label for="quantity">Quantity: </label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+        </p>
+        <p>
+            <label for="delivery_address">Delivery Address:</label>
+            <textarea id="delivery_address" name="delivery_address" required></textarea>
+        </p>
         <button type="submit">Place Order</button>
     </form>
     </section>

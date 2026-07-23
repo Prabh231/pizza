@@ -1,5 +1,7 @@
 /* basic */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body {
@@ -88,7 +90,7 @@ footer {
     margin-top: 50px;
 }
 /* Mobile */
-@media(max-width:650px){
+@media(max-width:650px) {
     .order-container {
         width: 90%;
         padding: 20px;
