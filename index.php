@@ -26,7 +26,7 @@
         <label>Quantity:</label>
         <input type="number" name="quantity" min="1"required>
         <label>Delivery Address:</label>
-        <textarea name="delivery_addressaddress" required></textarea>
+        <textarea name="delivery_address" required></textarea>
         <button type="submit">Place Order</button>
     </form>
     </section>
