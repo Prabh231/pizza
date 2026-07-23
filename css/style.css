@@ -35,6 +35,8 @@ header h1 {
 }
 fieldset {
     border: 1px solid #ccc;
+    display: inline-block; 
+    width: auto;
     border-radius: 8px;
     padding: 15px;
     margin-top: 15px;
@@ -74,7 +76,13 @@ textarea:focus {
     border-color: #b22222;
     box-shadow: 0 0 6px rgba(178, 34, 34, 0.3);
 }
-input,
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+/* Radio and Checkbox */
+input:not([type="radio"]):not([type="checkbox"]),
 select,
 textarea {
     width: 100%;
@@ -85,20 +93,15 @@ textarea {
     background-color: #fff;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
-textarea {
-    height: 100px;
-    resize: vertical;
-}
-/* Radio and Checkbox */
 input[type="radio"],
 input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
+    width: auto;
+    height: auto;
     padding: 0;
     margin-right: 8px;
     margin-top: 0;
-    vertical-align: middle;
     cursor: pointer;
+    accent-color: #b22222;
 }
 /* Button */
 button {
