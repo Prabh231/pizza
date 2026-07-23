@@ -1,7 +1,7 @@
 <?php
 require_once 'classes/Database.php';
 require_once 'classes/OrderCRUD.php';
-include_once 'includes/header.php';
+include_once 'templates/header.php';
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {header('Location: index.php');exit;}
 echo "<section>Pizza Order Processing Status</section>";
 try {
@@ -34,5 +34,5 @@ catch(PDOException $e) {
 catch(Exception $e) {
     echo "<div class='alert alert-danger'>Error: " . htmlspecialchars($e->getMessage()) . "</div>";
 }
-include_once 'includes/footer.php';
+include_once 'templates/footer.php';
 ?>
