@@ -7,7 +7,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f8f5f0;
-    margin: 0;
     color: #333;
 }
 /* Header */
@@ -22,7 +21,7 @@ header h1 {
 }
 /* Order Form */
 .order-container {
-    max-width: 600px;
+    max-width: 650px;
     margin: 40px auto;
     background-color: white;
     padding: 35px;
@@ -34,12 +33,45 @@ header h1 {
     color: #b22222;
     margin-bottom: 25px;
 }
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+}
+fieldset label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+legend {
+    font-weight: bold;
+    color: #b22222;
+    padding: 0 8px;
+}
 /* Form */
+form {
+    margin-bottom: 20px;
+}
+form p {
+    margin-bottom: 18px;
+}
 form label {
     display: block;
     margin-top: 15px;
     margin-bottom: 5px;
     font-weight: bold;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #b22222;
+    box-shadow: 0 0 6px rgba(178, 34, 34, 0.3);
 }
 input,
 select,
@@ -49,6 +81,8 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 textarea {
     height: 100px;
@@ -63,6 +97,7 @@ input[type="checkbox"] {
 }
 /* Button */
 button {
+    display: block;
     width: 100%;
     margin-top: 25px;
     padding: 12px;
@@ -72,9 +107,13 @@ button {
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
 }
 button:hover {
     background-color: #176617;
+    transform: translateY(-2px);
 }
 /* Success Message */
 .alert {

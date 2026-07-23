@@ -25,18 +25,18 @@
         </p>
         <fieldset>
             <legend>Pizza Type:</legend>
-                <input type="radio" id="veggie" name="pizza_type" value="Veggie" required>Veggie
+                <input type="radio" id="veggie" name="pizza_type" value="Veggie" required>
                 <label for="veggie">Veggie</label>
-                <input type="radio" id="pepperoni" name="pizza_type" value="Pepperoni">Pepperoni
+                <input type="radio" id="pepperoni" name="pizza_type" value="Pepperoni">
                 <label for="pepperoni">Pepperoni</label>
         </fieldset>
         <fieldset>
             <legend>Toppings:</legend>
-            <input type="checkbox" id="cheese" name="toppings[]" value="Cheese">Extra Cheese
+            <input type="checkbox" id="cheese" name="toppings[]" value="Cheese">
             <label for="cheese">Extra Cheese</label>
-            <input type="checkbox" id="mushroom" name="toppings[]" value="Mushroom">Mushroom
+            <input type="checkbox" id="mushroom" name="toppings[]" value="Mushroom">
             <label for="mushroom">Mushroom</label>
-            <input type="checkbox" id="olives" name="toppings[]" value="Olives">Olives
+            <input type="checkbox" id="olives" name="toppings[]" value="Olives">
             <label for="olives">Olives</label>
         </fieldset>
         <p>
