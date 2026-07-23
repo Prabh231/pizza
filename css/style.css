@@ -42,7 +42,8 @@ fieldset {
     background-color: #fafafa;
 }
 fieldset label {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     font-weight: normal;
     margin-right: 20px;
     margin-top: 10px;
@@ -91,9 +92,13 @@ textarea {
 /* Radio and Checkbox */
 input[type="radio"],
 input[type="checkbox"] {
-    width: auto;
+    width: 16px;
+    height: 16px;
+    padding: 0;
     margin-right: 8px;
-    margin-top: 10px;
+    margin-top: 0;
+    vertical-align: middle;
+    cursor: pointer;
 }
 /* Button */
 button {
